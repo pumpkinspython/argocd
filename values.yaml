@@ -1,0 +1,12 @@
+# ref: https://artifacthub.io/packages/helm/argo/argo-cd?modal=values
+global:
+  domain: argocd.hostilemeow.net
+
+configs:
+  params:
+    # handling tls outside of cluster
+    server.insecure: true
+
+server:
+  ingress:
+    enabled: true
